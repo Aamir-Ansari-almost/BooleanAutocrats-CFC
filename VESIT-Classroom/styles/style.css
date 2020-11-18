@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #333;
@@ -11,84 +6,109 @@ body {
     height: 100vh;
 }
 
-.container1 {
-    width: 100%;
-    height: 100%;
-
-    overflow: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-.navbar {
+.my_navbar {
     position: fixed;
     top: 0;
     z-index: 1;
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 60px;
     background: rgba(0,0,0,0.7);
 }
 
-.navbar ul {
+.my_navbar ul {
     display: flex;
     width: 100%;
     list-style: none;
     justify-content: center;
 }
 
-.navbar ul li {
+.my_navbar ul li {
     margin: 0 1rem;
     padding: 1rem;
 }
 
-.navbar ul li a {
+.my_navbar ul li a {
     text-decoration: none;
     text-transform: capitalize;
     color: #f4f4f4;
 }
 
-.navbar ul li a:hover {
+.my_navbar ul li a:hover {
     color: skyblue;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
+
+.my_container {
+    width: 100%;
+    height: 100%;
+
+    /*overflow: scroll;*/
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 section {
     display: flex;
     flex-direction: column; 
-    text-align: center;
-    align-items: center;
+    /* text-align: center;
+    align-items: center; */
     width: 100%;
     height: 100vh; 
     scroll-snap-align: center;
 }
 
-section h1 {
-    margin: 130px;
-    font-size: 4rem;
+.h1_home {
+    margin: 30%;
+    
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.welcome{
+    font-size: 3rem;
 }
 
-section p {
-    margin: -100px;
+.p_home {
+    margin: 10%;
     font-size: 1.5 rem;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+.h1_mission {
+    font-family: 'proxima_nova';
+    font-size: 3rem;
+    margin-top: 11%;
+    padding-left: 20%;
+    text-align: left;
+    color: #333;
+}
+.events{
+    text-align: center;
+    align-items: center;
+}
+.p_mission {
+    font-family: 'proxima_nova';
+    font-size: 1.2rem;
+    margin-top: -105px;
+    padding-left: 50%;
+    color: #333;
 }
 
 section#home {
-    background: url('https://images.pexels.com/photos/3815760/pexels-photo-3815760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center/cover;;
+    background: url('https://images.pexels.com/photos/1739842/pexels-photo-1739842.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat center center/cover;;
 }
 
-section#calendar {
-    background: url('https://images.pexels.com/photos/2387819/pexels-photo-2387819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat left center/cover;;
+section#events {
+    background: url('https://webgradients.com/public/webgradients_png/089%20Premium%20White.png') no-repeat left center/cover;;
 }
-
-section#notices {
-    background: url('https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat left center/cover;;
-}
-
-section#assignment {
-    background: url('https://images.pexels.com/photos/785429/pexels-photo-785429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat left center/cover;;
-}
-
-section#notes {
-    background: url('https://images.pexels.com/photos/2294880/pexels-photo-2294880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat left center/cover;;
-}
-
